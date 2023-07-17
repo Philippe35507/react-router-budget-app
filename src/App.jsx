@@ -5,6 +5,10 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Dashboard, { dashboardLoader } from "./pages/Dashboard";
 import Error from "./pages/Error";
 
+// library
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 // actions
 import { logoutAction } from "./actions/logout";
 
@@ -41,6 +45,7 @@ function App() {
   return (
     <div className="app">
       <RouterProvider router={router} />
+      <ToastContainer />
     </div>
   );
 }
