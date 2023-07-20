@@ -27,6 +27,7 @@ const Intro = () => {
             arial-label="Your Name"
             autoComplete="given-name"
           />
+          <input type="hidden" name="_action" value="newUser"></input>
           <button type="submit" className="btn btn--dark">
             <span>Create acount</span>
             <UserPlusIcon> width={20}</UserPlusIcon>

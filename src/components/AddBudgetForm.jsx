@@ -9,7 +9,7 @@ const AddBudgetForm = () => {
     <div className="form-wrapper">
       <h2 className="h3">
         <Form method="post" className="grid-sm">
-          <label htmlfor="newBudget">Budget Name</label>
+          <label htmlFor="newBudget">Budget Name</label>
           <input
             type="text"
             name="newBudget"
@@ -28,6 +28,7 @@ const AddBudgetForm = () => {
               inputMode="decimal"
             ></input>
           </div>
+          <input type="hidden" name="_action" value="createBudget"></input>
           <button type="submit" className="btn btn--dark">
             <span>Create budget</span>
             <CurrencyEuroIcon width={20} />
